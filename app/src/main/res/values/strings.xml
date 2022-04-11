@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FormApplication</string>
+    <string name="enter_something">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="heading_one">Enter your First and Last Name..</string>
+    <string name="heading_two">Enter your Contact No. and Current Address..</string>
+    <string name="heading_three">Enter your Company Name and Job Title..</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Email Address</string>
+    <string name="company_name">Company Name</string>
+    <string name="job_title">Job Title</string>
+    <string name="demo">Demo</string>
+    <string name="first">First Name:</string>
+    <string name="last">Last Name:</string>
+    <string name="contact">Contact No:</string>
+    <string name="email">Email Address:</string>
+    <string name="company">Company:</string>
+    <string name="title">Job Title:</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+</resources>
