@@ -158,11 +158,11 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/last_name"
-                    android:paddingLeft="5dp"
-
                     android:layout_width="0dp"
+
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="5dp"
                     android:text="@{userDetails.lastName}"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -173,6 +173,7 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/contact_no"
                     android:layout_width="0dp"
+
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:paddingLeft="5dp"
@@ -212,7 +213,6 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/job_title"
                     android:layout_width="0dp"
-
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:paddingLeft="5dp"

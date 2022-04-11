@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun initializeViewPager() {
         with(binding) {
             list = mainViewModel.getFormModelList(this@MainActivity) as ArrayList<FormModel>
@@ -49,15 +48,15 @@ class MainActivity : AppCompatActivity() {
             viewPager.adapter = adapter
             addDots(currentPage, list.size, llDotsIndicator)
             finish.setOnClickListener {
-                Log.d("Object", "initializeViewPager: " + userDetails.toString())
-                val customalertdialog = CustomAlert(userDetails)
-                customalertdialog.isCancelable = false
-                customalertdialog.show(supportFragmentManager, "customalert")
-                userDetails = UserDetails()
-                adapter.editUserDetails(userDetails)
-                Handler().postDelayed(Runnable {
-                    viewPager.adapter = adapter
-                }, 1000)
+                    Log.d("Object", "initializeViewPager: " + userDetails.toString())
+                    val customalertdialog = CustomAlert(userDetails)
+                    customalertdialog.isCancelable = false
+                    customalertdialog.show(supportFragmentManager, "customalert")
+                    userDetails = UserDetails()
+                    adapter.editUserDetails(userDetails)
+                    Handler().postDelayed(Runnable {
+                        viewPager.adapter = adapter
+                    }, 1000)
             }
             viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageSelected(position: Int) {
@@ -70,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     next.setOnClickListener {
                         Log.d("TAG", "onCreate: " + viewPager.currentItem)
-                        viewPager.setCurrentItem(position + 1, false)
+                       viewPager.setCurrentItem(position + 1, false)
                     }
                     back.setOnClickListener {
                         Log.d("TAG", "onCreate: " + viewPager.currentItem)
